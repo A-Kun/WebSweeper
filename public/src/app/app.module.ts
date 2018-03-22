@@ -10,6 +10,8 @@ import { LoginComponent } from './login.component';
 import { GameComponent } from './game.component';
 import { MinesweeperComponent } from './minesweeper.component';
 import { ChatComponent } from './chat.component';
+import { ShooterGameComponent } from './shooter.component';
+import { ShooterComponent } from './shooter/shooter.component';
 
 import { APIRoutingService } from './services/api-routing.service';
 import { SocketService } from './services/socket.service';
@@ -23,6 +25,8 @@ const config: SocketIoConfig = { url: 'http://localhost:3000/', options: {path: 
     GameComponent,
     MinesweeperComponent,
     ChatComponent,
+    ShooterGameComponent,
+    ShooterComponent
   ],
   imports: [
     BrowserModule,

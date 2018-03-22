@@ -3,8 +3,8 @@
 
 const config = require('../config/config.json'),
   storeConfig = {
-    uri: `${config.mongo.server}/sessions`,
-    databaseName: 'sessions',
+    uri: `${config.mongo.server}/${config.mongo.db}`,
+    databaseName: 'websweeper',
     collection: 'websweeper_sessions'
   };
 

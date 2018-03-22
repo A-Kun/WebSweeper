@@ -5,6 +5,7 @@ import { LoginComponent } from './login.component';
 import { GameComponent } from './game.component';
 import { MinesweeperComponent } from './minesweeper.component';
 import { ChatComponent } from './chat.component';
+import { ShooterGameComponent } from './shooter.component';
 
 const routes: Routes = [
   {
@@ -18,9 +19,14 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'game',
+    path: 'game/:id/minesweeper',
     pathMatch: 'full',
     component: GameComponent,
+  },
+  {
+    path: 'game/:id/shooter',
+    pathMatch: 'full',
+    component: ShooterGameComponent,
   },
   {
     path: 'chat',

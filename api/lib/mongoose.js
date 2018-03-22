@@ -23,6 +23,6 @@ module.exports = {
   configure: function (app, opt) {
     mongoose.Promise = Promise;
     mongoose.validID = validID;
-    return mongoose.connect(`${config.mongo.server}/${DB_NAME}`);
+    return mongoose.connect(`${config.mongo.server}/${config.mongo.db}`);
   }
 };

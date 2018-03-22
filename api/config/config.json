@@ -6,7 +6,8 @@
     "DOMAIN": "http://localhost:3000"
   },
   "mongo" : {
-    "server": "mongodb://localhost"
+    "server": "mongodb://websweeper_admin:c09weebadmin@ds121248.mlab.com:21248",
+    "db": "websweeper"
   },
 
   "specialization": {},
